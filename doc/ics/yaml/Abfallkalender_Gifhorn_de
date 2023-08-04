@@ -1,5 +1,15 @@
 title: Abfallkalender Landkreis Gifhorn
 url: https://www.abfallkalender-gifhorn.de/2023/
 country: Germany
-howto: HOWTO
-test_cases: TEST_CASES
+howto:  
+- Goto <https://www.abfallkalender-gifhorn.de/2023/> and select your location.  
+  - Click on `Gebietseinheit:` expand.
+  - Click on `Ort / Straße:` expand.
+  - Click on `Anzeige:` expand.
+  - Left-click on `individuelle ICS-Datei erzeugen`.
+  - Left-click on `Hier` to get a webcal link below `URL in Kalender-App einbinden`.
+  - Replace the `url` in the example configuration with this link.
+  - Replace the Year in the URL with `{%Y}`
+test_cases: 
+   Bokensdorf:
+       url: "https://www.abfallkalender-gifhorn.de/2023_entsorgungskalender.ics"
